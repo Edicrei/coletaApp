@@ -57,26 +57,7 @@ const MainStackNavigator = () => {
           
           />
 
-<Stack.Screen name="End1" 
-      component={End1}
-      options={{
-        headerLeft:()=>{
-          return null;
-        },
-        headerTitle: () =>{
-          return null
-        },
-        header:()=>{
-          return null
-        },
 
-      }}
-      
-      
-      
-      
-      />
-  
       
     </Stack.Navigator>
   );
@@ -149,6 +130,26 @@ const RegisterStackNavigator = () => {
       
        
        />
+
+     <Stack.Screen name="End1" 
+      component={End1}
+      options={{
+        headerLeft:()=>{
+          return null;
+        },
+        headerTitle: () =>{
+          return null
+        },
+        header:()=>{
+          return null
+        },
+
+      }}
+      
+      
+      
+      
+      />
     </Stack.Navigator>
   );
 };
