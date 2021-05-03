@@ -10,7 +10,12 @@ render(){
   return (
     <View style={{alignItems:'center'}}>
           <View style={styles.Vlogo}>
-               
+              <TouchableOpacity
+              
+              onPress={()=> navigation.navigate("Contact")}
+              >
+                <Image style={styles.BArrow} source={require('../assets/arrowleft.png')}/>   
+                </TouchableOpacity>
                   <Image style={styles.Ilogo} source={require('../assets/logo.png')}/>               
 
                 <View style={styles.Vdrawer}>
@@ -50,7 +55,14 @@ const styles = StyleSheet.create({
   Ilogo: {
     width: 50, 
     height: 40, 
-    marginTop: 5 
+    marginTop: - 35,
+    marginLeft: 35 
+  },
+  BArrow: {
+    width: 30, 
+    height: 30, 
+    marginTop: 10, 
+    marginLeft: 5
   },
   Vdrawer: {
     marginTop: - 40,  
