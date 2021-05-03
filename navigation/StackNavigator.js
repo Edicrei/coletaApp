@@ -58,6 +58,7 @@ const MainStackNavigator = () => {
           />
 
 
+  
       
     </Stack.Navigator>
   );
@@ -131,7 +132,7 @@ const RegisterStackNavigator = () => {
        
        />
 
-     <Stack.Screen name="End1" 
+<Stack.Screen name="End1" 
       component={End1}
       options={{
         headerLeft:()=>{
